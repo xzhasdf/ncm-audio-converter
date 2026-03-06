@@ -56,7 +56,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name="NCM音乐转码",
+    name="NCM-Converter",
     debug=False,
     strip=False,
     upx=False,
@@ -71,5 +71,5 @@ coll = COLLECT(
     a.datas,
     strip=False,
     upx=False,
-    name="NCM音乐转码",
+    name="NCM-Converter",
 )
