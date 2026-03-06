@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ncm-audio-converter"
+version = "0.1.0"
+description = "Batch convert local music files to common audio formats"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "xiaozihao" }]
+license = { text = "MIT" }
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "cryptography>=41.0",
+]
+
+[project.optional-dependencies]
+web = [
+  "flask>=3.0",
+]
+desktop = [
+  "flask>=3.0",
+  "pywebview>=4.0",
+]
+
+[project.scripts]
+ncm-convert = "ncm_audio_converter.cli:main"
+ncm-web = "ncm_audio_converter.web:main"
+ncm-desktop = "ncm_audio_converter.desktop:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

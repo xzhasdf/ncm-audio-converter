@@ -1,0 +1,74 @@
+('/Users/xiaozihao/Desktop/未命名文件夹 '
+ '3/ncm-audio-converter/build/NCMAudioConverterApp/NCMAudioConverterApp.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/build/NCMAudioConverterApp/PYZ-00.pyz',
+   'PYZ'),
+  ('python3.12/lib-dynload/_struct.cpython-312-darwin.so',
+   '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload/_struct.cpython-312-darwin.so',
+   'EXTENSION'),
+  ('python3.12/lib-dynload/zlib.cpython-312-darwin.so',
+   '/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload/zlib.cpython-312-darwin.so',
+   'EXTENSION'),
+  ('struct',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/build/NCMAudioConverterApp/localpycs/struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/build/NCMAudioConverterApp/localpycs/pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/build/NCMAudioConverterApp/localpycs/pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/build/NCMAudioConverterApp/localpycs/pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/.venv/lib/python3.12/site-packages/PyInstaller/loader/pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('desktop',
+   '/Users/xiaozihao/Desktop/未命名文件夹 '
+   '3/ncm-audio-converter/src/ncm_audio_converter/desktop.py',
+   'PYSOURCE')],
+ 'Python',
+ True,
+ False,
+ False,
+ [],
+ 'arm64',
+ None,
+ None)
