@@ -103,27 +103,48 @@ ncm-desktop
 
 启动后会自动打开浏览器并加载内置前端页面。
 
-## 打包（Windows / macOS）
+## 打包 Windows x64 独立程序
 
-说明：不能在 macOS 上直接产出 Windows 可执行文件，也不能在 Windows 上直接产出 macOS app。需要在各自系统本机执行打包。
+使用 GitHub Actions 在云端自动构建，本地无需任何额外环境。
 
-- macOS 打包：
+### 首次构建
 
 ```bash
-cd ncm-audio-converter
-./scripts/build_macos.sh
+# 初始化并推送到 GitHub
+git init
+git add .
+git commit -m "init"
+git remote add origin https://github.com/你的用户名/ncm-audio-converter.git
+git push -u origin main
 ```
 
-- Windows 打包（PowerShell）：
+推送完成后，打开 GitHub 仓库页面：
 
-```powershell
-cd ncm-audio-converter
-.\scripts\build_windows.ps1
+```
+Actions → Build Windows x64 → Run workflow → Run workflow
 ```
 
-打包配置文件：
+等待约 5~8 分钟，完成后在页面底部 **Artifacts** 下载 `NCM音乐转码-win64.zip`。
+解压后双击 `NCM音乐转码.exe` 直接运行，无需安装。
 
-- `packaging/desktop.spec`
+### 修改代码后重新打包
+
+```bash
+git add .
+git commit -m "描述本次改动"
+git push
+```
+
+然后去 Actions 页面手动触发一次 **Build Windows x64**，下载新的 Artifact 即可。
+
+### 发布正式版本
+
+打 tag 会自动构建并在 GitHub Releases 页面生成下载链接：
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
 
 ## 注意事项
 
