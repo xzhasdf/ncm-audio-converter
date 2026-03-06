@@ -1,13 +1,11 @@
-# PyInstaller spec — Windows x64 desktop build
+# PyInstaller spec — Windows x64 desktop build (compatible with PyInstaller 6.x)
 # Run from project root after:
 #   1. npm run build  (inside frontend/)
 #   2. copy ffmpeg.exe to project root
 #   3. pip install -e ".[desktop]" cryptography pyinstaller
 #   4. pyinstaller build.spec
 
-from PyInstaller.utils.hooks import collect_all, collect_data_files
-
-block_cipher = None
+from PyInstaller.utils.hooks import collect_all
 
 # ── collect pywebview & flask sub-modules ──────────────────────────────────
 datas = []
@@ -48,11 +46,10 @@ a = Analysis(
     hookspath=[],
     runtime_hooks=[],
     excludes=["tkinter", "unittest", "email", "xmlrpc", "http.server"],
-    cipher=block_cipher,
     noarchive=False,
 )
 
-pyz = PYZ(a.pure, a.zlib_data, cipher=block_cipher)
+pyz = PYZ(a.pure)
 
 exe = EXE(
     pyz,
