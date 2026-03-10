@@ -34,6 +34,11 @@ hiddenimports += [
     "cryptography.hazmat.primitives.ciphers",
     "cryptography.hazmat.primitives.ciphers.algorithms",
     "cryptography.hazmat.primitives.ciphers.modes",
+    # pywebview Windows backends
+    "webview.platforms.winforms",
+    "webview.platforms.edgechromium",
+    "webview.platforms.mshtml",
+    "clr_loader",
 ]
 
 # ── Analysis ───────────────────────────────────────────────────────────────
